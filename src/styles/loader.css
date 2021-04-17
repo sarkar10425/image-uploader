@@ -1,0 +1,43 @@
+.loader-box {
+    max-width: 400px;
+    height: max-content;
+    padding: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4f4f4f;
+  }
+  
+  .loader-box p {
+    margin-top: 0px;
+  }
+  
+  .progress {
+    height: 6px;
+    background: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .progress-value {
+    animation: load 2s infinite ease-out 0s;
+    background: #2f80ed;
+    border-radius: 8px;
+    max-width: 30%;
+    height: 6px;
+    display: flex;
+  }
+  
+  @keyframes load {
+    from {
+      margin-left: 0%;
+      max-width: 10%;
+    }
+    10% {
+      max-width: 30%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  }
+  
